@@ -1,0 +1,53 @@
+body{
+    margin: 10px;
+    background: url(https://i.pinimg.com/736x/01/35/2b/01352b00e1914879039530fb36f1373a--smiley-symbol-happy-faces.jpg) no-repeat center center fixed;}
+
+#Table1{
+    position: absolute;
+    left: 7.75%;
+    top: 10%;
+}
+
+#Table2{
+    position: absolute;
+    left: 7.75%;
+    top: 40%;
+}
+
+#myButton2{
+    position: absolute;
+    left: 7.75%;
+    top: 60%;
+}
+
+#myButton{
+    position: absolute;
+    left: 7.75%;
+    top: 30%;
+}
+
+#CurrentGrade{
+    position: absolute;
+    left: 7.75%;
+    top: 35%;
+    font-size: 20px;
+    font-family: Arial;
+    color: darkgreen;
+}
+
+#FinalGradeNeeded {
+    position: absolute;
+    left: 7.75%;
+    top: 65%;
+    font-size: 20px;
+    font-family: Arial;
+    color: darkgreen;
+}
+
+#GradeCalc {
+    position: absolute;
+    font-size: 30px;
+    font-family: Arial;
+    color: crimson;
+}
+
