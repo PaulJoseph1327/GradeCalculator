@@ -32,7 +32,7 @@ body{
     top: 35%;
     font-size: 20px;
     font-family: Arial;
-    color: darkgreen;
+    color: crimson;
 }
 
 #FinalGradeNeeded {
@@ -41,7 +41,7 @@ body{
     top: 65%;
     font-size: 20px;
     font-family: Arial;
-    color: darkgreen;
+    color: crimson;
 }
 
 #GradeCalc {

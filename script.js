@@ -21,21 +21,7 @@ function doItC(){
         var HwGrade = (TotalHw/PointsHw) * (WeightHw / WW);
         console.log(HwGrade);
         document.getElementById("HwTotal").innerHTML = (TotalHw/PointsHw) * 100 + "%";
-        if((TotalHw/PointsHw) * 100 >= 90){
-            document.getElementById("HwTotal").style.background = "green";
-        }
-        if((TotalHw/PointsHw) * 100 <= 89.9 && (TotalHw/PointsHw) * 100 >= 80){
-            document.getElementById("HwTotal").style.background = "lightblue";
-        }
-        if((TotalHw/PointsHw) * 100 <= 79.9 && (TotalHw/PointsHw) * 100 >= 70){
-            document.getElementById("HwTotal").style.background = "yellow";
-        }
-        if((TotalHw/PointsHw) * 100 <= 69.9 && (TotalHw/PointsHw) * 100 >= 60){
-            document.getElementById("HwTotal").style.background = "orange";
-        }
-        if((TotalHw/PointsHw) * 100 <= 59.9){
-            document.getElementById("HwTotal").style.background = "red";
-        }
+        colorRows("HwTotal", (TotalHw/PointsHw) * 100);
     }
 
 
@@ -55,21 +41,7 @@ function doItC(){
         var QzGrade = (TotalQz/PointsQz) * (WeightQz / WW);
         console.log(QzGrade);
         document.getElementById("QzTotal").innerHTML = (TotalQz/PointsQz) * 100 + "%";
-        if((TotalQz/PointsQz) * 100 >= 90){
-            document.getElementById("QzTotal").style.background = "green";
-        }
-        if((TotalQz/PointsQz) * 100 <= 89.9 && (TotalQz/PointsQz) * 100 >= 80){
-            document.getElementById("QzTotal").style.background = "lightblue";
-        }
-        if((TotalQz/PointsQz) * 100 <= 79.9 && (TotalQz/PointsQz) * 100 >= 70){
-            document.getElementById("QzTotal").style.background = "yellow";
-        }
-        if((TotalQz/PointsQz) * 100 <= 69.9 && (TotalQz/PointsQz) * 100 >= 60){
-            document.getElementById("QzTotal").style.background = "orange";
-        }
-        if((TotalQz/PointsQz) * 100 <= 59.9){
-            document.getElementById("QzTotal").style.background = "red";
-        }
+        colorRows("QzTotal", (TotalQz/PointsQz) * 100);
     }
 
 
@@ -89,21 +61,7 @@ function doItC(){
         var TTGrade = (TotalTT/PointsTT) * (WeightTT / WW);
         console.log(TTGrade);
         document.getElementById("TTTotal").innerHTML = (TotalTT/PointsTT) * 100 + "%";
-        if((TotalTT/PointsTT) * 100 >= 90){
-            document.getElementById("TTTotal").style.background = "green";
-        }
-        if((TotalTT/PointsTT) * 100 <= 89.9 && (TotalTT/PointsTT) * 100 >= 80){
-            document.getElementById("TTTotal").style.background = "lightblue";
-        }
-        if((TotalTT/PointsTT) * 100 <= 79.9 && (TotalTT/PointsTT) * 100 >= 70){
-            document.getElementById("TTTotal").style.background = "yellow";
-        }
-        if((TotalTT/PointsTT) * 100 <= 69.9 && (TotalTT/PointsTT) * 100 >= 60){
-            document.getElementById("TTTotal").style.background = "orange";
-        }
-        if((TotalTT/PointsTT) * 100 <= 59.9){
-            document.getElementById("TTTotal").style.background = "red";
-        }
+        colorRows("TTTotal", (TotalTT/PointsTT) * 100);
     }
 
 
@@ -123,21 +81,7 @@ function doItC(){
         var MdGrade = (TotalMd/PointsMd) * (WeightMd / WW);
         console.log(MdGrade);
         document.getElementById("MdTotal").innerHTML = (TotalMd/PointsMd) * 100 + "%";
-        if((TotalMd/PointsMd) * 100){
-            document.getElementById("MdTotal").style.background = "green";
-        }
-        if((TotalMd/PointsMd) * 100 <= 89.9 && (TotalMd/PointsMd) * 100 >= 80){
-            document.getElementById("MdTotal").style.background = "lightblue";
-        }
-        if((TotalMd/PointsMd) * 100 <= 79.9 && (TotalMd/PointsMd) * 100 >= 70){
-            document.getElementById("MdTotal").style.background = "yellow";
-        }
-        if((TotalMd/PointsMd) * 100 <= 69.9 && (TotalMd/PointsMd) * 100 >= 60){
-            document.getElementById("MdTotal").style.background = "orange";
-        }
-        if((TotalMd/PointsMd) * 100 <= 59.9){
-            document.getElementById("MdTotal").style.background = "red";
-        }
+        colorRows("MdTotal", (TotalMd/PointsMd) * 100);
     }
 
 
@@ -152,21 +96,7 @@ function doItC(){
     console.log(currentGrade);
     document.getElementById("CurrentGrade").innerHTML = "Your current grade is " + Math.round(currentGrade) + "%";
     document.getElementById("CurrentGrade1").innerHTML = Math.round(currentGrade) + "%";
-    if(currentGrade >= 90){
-        document.getElementById("CurrentGrade1").style.background = "green";
-    }
-    if(currentGrade <= 89.9 && currentGrade >= 80){
-        document.getElementById("CurrentGrade1").style.background = "lightblue";
-    }
-    if(currentGrade <= 79.9 && currentGrade >= 70){
-        document.getElementById("CurrentGrade1").style.background = "yellow";
-    }
-    if(currentGrade <= 69.9 && currentGrade >= 60){
-        document.getElementById("CurrentGrade1").style.background = "orange";
-    }
-    if(currentGrade <= 59.9){
-        document.getElementById("CurrentGrade1").style.background = "red";
-    }
+    colorRows("CurrentGrade1", currentGrade);
 }
 
 
@@ -184,4 +114,22 @@ function doItF(){
     console.log(1 - percentFW);
     document.getElementById("FinalGradeNeeded").innerHTML = "The final grade needed to aquire your desired grade is " + Math.round(finalGrade) + "%";
     document.getElementById("FinalGradeNeeded1").innerHTML = Math.round(finalGrade) + "%";
+}
+
+function colorRows(row, grade) {
+    if(grade >= 90){
+        document.getElementById(row).style.background = "green";
+    }
+    if(grade <= 89.9 && grade >= 80){
+        document.getElementById(row).style.background = "lightblue";
+    }
+    if(grade <= 79.9 && grade >= 70){
+        document.getElementById(row).style.background = "yellow";
+    }
+    if(grade <= 69.9 && grade >= 60){
+        document.getElementById(row).style.background = "orange";
+    }
+    if(grade <= 59.9){
+        document.getElementById(row).style.background = "red";
+    }
 }
